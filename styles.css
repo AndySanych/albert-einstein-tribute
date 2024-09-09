@@ -1,0 +1,154 @@
+/* General page styling */
+body {
+  font-family: "Georgia", serif; /* A classic serif font that exudes sophistication and clarity */
+  background-color: #f4f1e0; /* Subtle papyrus-like background color to give the page an elegant, ancient touch */
+  margin: 0; /* Remove default margins for perfect alignment */
+  padding: 0;
+  display: flex; /* Center the main content effortlessly */
+  justify-content: center; /* Horizontally center the main content */
+  align-items: center; /* Vertically center the main content */
+  min-height: 100vh; /* Full viewport height for perfect centering */
+  background-image: url("https://www.transparenttextures.com/patterns/aged-paper.png"); /* Adds the texture of aged paper for an ancient manuscript feel */
+  background-size: cover; /* Ensure the background covers the entire page for consistency */
+}
+
+#main {
+  background-color: rgba(
+    255,
+    255,
+    240,
+    0.8
+  ); /* Soft, semi-transparent background to ensure content readability */
+  padding: 30px; /* Spacious padding for content comfort */
+  max-width: 900px; /* Optimized width for both readability and design */
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.2); /* Soft shadow to subtly elevate the main content from the background */
+  border-radius: 15px; /* Rounded corners to give the design a modern, polished look */
+  border: 1px solid #c5b084; /* A subtle border, reminiscent of an old parchment manuscript */
+}
+
+/* Header and general text styling */
+h1,
+h2,
+h3 {
+  font-family: "Playfair Display", serif; /* Elegant serif font for headings to command attention with style */
+  color: #5d4037; /* Dark brown for a professional and historical tone */
+  text-align: center; /* Center-align the headings for a balanced design */
+  margin-bottom: 15px; /* Add breathing room between headings and other content */
+}
+
+p {
+  font-size: 18px; /* Comfortable, readable font size */
+  line-height: 1.8; /* Perfectly spaced lines for excellent readability */
+  color: #4e342e; /* Soft brown tone to match the ancient, scholarly aesthetic */
+  text-align: justify; /* Justified text for a clean, aligned block look */
+}
+
+/* Image and caption styling */
+#img-div {
+  display: flex; /* Utilize flexbox for easy vertical alignment */
+  flex-direction: column; /* Stack image and caption vertically */
+  align-items: center; /* Perfectly center both the image and caption horizontally */
+  margin-bottom: 30px; /* Adds necessary space below the image for clean separation */
+}
+
+#image {
+  max-width: 100%; /* Ensures the image scales properly within its container */
+  height: auto; /* Maintains the original aspect ratio, ensuring no distortion */
+  display: block; /* Treats the image as a block-level element to ensure consistency */
+  border: 5px solid #bdb093; /* Classic, antique border to enhance the old-world feel */
+  border-radius: 10px; /* Soft corners to make the image visually inviting */
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Adds depth with a subtle shadow, giving the image prominence */
+}
+
+#img-caption {
+  text-align: center; /* Centers the caption directly below the image for symmetry */
+  margin-top: 10px; /* Adds space between the image and the caption for better readability */
+  font-style: italic; /* Italic text to distinguish the caption as descriptive or secondary content */
+  color: #6d4c41; /* Soft brown color for a refined look, consistent with the overall design */
+}
+
+/* Biography section styling */
+#tribute-info {
+  background-color: #fefaf1; /* Light background that contrasts with the papyrus theme, making text easy to read */
+  padding: 20px; /* Ample padding for comfort and spacing */
+  border-radius: 10px; /* Rounded corners for modern visual appeal */
+  border: 1px solid #d7c3a3; /* Subtle border to enclose the biography section neatly */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Light shadow for a touch of depth without overwhelming the page */
+}
+
+#tribute-info ul {
+  list-style-type: none; /* Removes the default bullet points for a cleaner, more polished look */
+  padding: 0; /* No extra padding needed for this layout */
+}
+
+#tribute-info li {
+  margin-bottom: 10px; /* Adds necessary spacing between list items for better readability */
+  font-size: 1.1rem; /* Slightly larger font size to make the list stand out */
+  color: #4e342e; /* Consistent text color for uniformity across sections */
+}
+
+strong {
+  color: #5d4037; /* Darker text color to emphasize key points or dates */
+}
+
+/* Styling for blockquote */
+blockquote {
+  background-color: #eae1cf; /* Soft, neutral background that complements the overall theme */
+  padding: 15px; /* Comfortable padding inside the blockquote for better text spacing */
+  border-left: 5px solid #8d6e63; /* Classic left-border styling for blockquotes */
+  font-style: italic; /* Italic text to indicate the quoted content */
+  margin: 30px 0; /* Space above and below to distinguish the blockquote from the surrounding content */
+  color: #5d4037; /* Dark brown for a scholarly and serious tone */
+}
+
+cite {
+  display: block; /* Forces citation to start on a new line */
+  text-align: right; /* Aligns the citation to the right for a professional touch */
+  margin-top: 10px; /* Adds space between the quote and the citation */
+  color: #8d6e63; /* Light brown color to differentiate the citation from the quote */
+  font-size: 1rem; /* Smaller font size to keep the citation subtle */
+}
+
+/* Styling for the Wikipedia link */
+#tribute-link {
+  color: #3e2723; /* Dark brown for the link to blend with the overall theme */
+  font-weight: bold; /* Bold to make the link stand out without needing underlining */
+  text-decoration: none; /* Removes the default underline for a cleaner look */
+  border-bottom: 1px dashed #8d6e63; /* Dotted underline to subtly indicate a link without overpowering the text */
+  padding-bottom: 2px; /* Adds space between the text and the border for better aesthetics */
+  transition: color 0.3s ease, border-bottom 0.3s ease; /* Smooth transition when the user hovers over the link */
+}
+
+#tribute-link:hover {
+  color: #5d4037; /* Darker color on hover for better feedback */
+  border-bottom: 1px solid #5d4037; /* Solid underline on hover to give the user a stronger visual cue */
+}
+
+/* Responsive design for smaller screens */
+@media (max-width: 768px) {
+  body {
+    padding: 10px; /* Reduces padding on smaller screens for better layout */
+  }
+
+  #main {
+    padding: 20px; /* Less padding for smaller screens to avoid crowding */
+  }
+
+  h1 {
+    font-size: 1.8rem; /* Scales down the heading size for smaller screens */
+  }
+
+  h2 {
+    font-size: 1.5rem; /* Scales down the sub-heading size for smaller screens */
+  }
+
+  p,
+  li {
+    font-size: 1rem; /* Slightly smaller text size for better readability on small devices */
+  }
+
+  blockquote {
+    padding: 10px; /* Reduces padding within blockquotes for better fit */
+    font-size: 0.9rem; /* Smaller font for blockquotes on mobile devices */
+  }
+}
